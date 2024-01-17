@@ -5,10 +5,12 @@ import keyboard
 import random
 import win32api, win32con
 
-#Tile 1 Position: X:  581 Y:  400 RGB: ( 77,  80, 115)
-#Tile 2 Position: X:  682 Y:  400 RGB: (  0,   0,   0)
-#Tile 3 Position: X:  770 Y:  400 RGB: ( 79,  82, 116)
-#Tile 4 Position: X:  869 Y:  400 RGB: ( 80,  83, 116)
+# Black RGB Value = (0, 0, 0)
+# Tile 1 Position : X = 1109 | Y = 848
+# Tile 2 Position : X = 1218 | Y = 848
+# Tile 3 Position : X = 1321 | Y = 848
+# Tile 4 Position : X = 1426 | Y = 848
+
 
 def click(x,y):
     win32api.SetCursorPos((x,y))
@@ -18,11 +20,11 @@ def click(x,y):
 
 while keyboard.is_pressed('q') == False:
     
-    if pyautogui.pixel(581, 400)[0] == 0:
-        click(581, 400)
-    if pyautogui.pixel(682, 400)[0] == 0:
-        click(682, 400)
-    if pyautogui.pixel(770, 400)[0] == 0:
-        click(770, 400)
-    if pyautogui.pixel(869, 400)[0] == 0:
-        click(869, 400)
+    if pyautogui.pixel(1109, 848)[0] == 0:
+        click(1109, 848)
+    if pyautogui.pixel(1218, 848)[0] == 0:
+        click(1218, 848)
+    if pyautogui.pixel(1321, 848)[0] == 0:
+        click(1321, 848)
+    if pyautogui.pixel(1426, 848)[0] == 0:
+        click(1426, 848)
